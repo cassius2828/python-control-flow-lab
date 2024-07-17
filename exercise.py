@@ -37,16 +37,17 @@ vowels = ["a", "e", "i", "o", "u"]
 
 
 def check_letter():
-    # logic here
-    user_letter = input("Add a letter: ").lower()
-    for letter in vowels:
-        if letter == user_letter:
-            return print(f" the letter {user_letter} is a vowel")
-        else:
-            return print(f" the letter {user_letter} is a consonant")
+  # logic here
+  user_letter = input("Add a letter: ").lower()
+
+  if user_letter in vowels:
+    return print(f" the letter {user_letter} is a vowel")
+  else:
+    return print(f" the letter {user_letter} is a consonant")
 
 
 check_letter()
+
 # Exercise 2: Old enough to vote?
 #
 # Write a Python function named `check_voting_eligibility` that determines if a user is old enough to vote.
